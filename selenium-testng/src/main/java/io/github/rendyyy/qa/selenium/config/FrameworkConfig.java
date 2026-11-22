@@ -50,4 +50,8 @@ public final class FrameworkConfig {
     public static int retryMaxCount() {
         return ConfigReader.getInt("retry.max.count", 1);
     }
+     
+   public static String platformUiBaseUrl() {
+        return ConfigReader.get("platform.ui.base.url");
+    }
 }

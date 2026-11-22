@@ -29,4 +29,15 @@ public final class ApiConfig {
     public static Duration readTimeout() {
         return Duration.ofSeconds(ConfigReader.getInt("api.read.timeout.seconds", 20));
     }
+        public static String platformBaseUrl() {
+        return ConfigReader.get("platform.api.base.url");
+    }
+
+    public static String platformAdminUsername() {
+        return ConfigReader.get("platform.admin.username");
+    }
+
+    public static String platformAdminPassword() {
+        return ConfigReader.get("platform.admin.password");
+    }
 }
